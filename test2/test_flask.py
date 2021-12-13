@@ -2,14 +2,14 @@ from flask import Flask, render_template, request
 import pickle
 import numpy as np
 
-model = pickle.load(open('./S_Model.pkl', 'rb'))
+model = pickle.load(open('S_Model.pkl', 'rb'))
 
 app = Flask(__name__)
 
 
 
 @app.route('/')
-def main():
+def m():
     return render_template('home.html')
 
 
